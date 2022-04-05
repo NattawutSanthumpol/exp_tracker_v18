@@ -5,7 +5,7 @@ const conn = mongoose.connect(process.env.ATLAS_URI)
      return db;
 
 }).catch(err=>{
-     console.log("Connection Error");
+     console.log("Connection Error "+err);
 })
 
 module.exports = conn;
